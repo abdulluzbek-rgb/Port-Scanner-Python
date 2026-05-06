@@ -1,19 +1,29 @@
-# High-Speed Multi-Threaded Port Scanner
+# 🛡️ High-Speed Multi-Threaded Port Scanner
 
-A professional-grade networking tool built with **Python** to scan for open ports on a target IP address. This tool is designed for speed and reliability, making it a valuable asset for network security audits.
+A professional-grade networking utility built with **Python** for rapid identification of open ports on a target host. This tool is engineered for efficiency, utilizing multi-threading and advanced queue management to perform network security audits and penetration testing tasks with high velocity.
 
-## 🚀 Features
-* **Multi-Threading:** Uses 100 concurrent threads for rapid scanning.
-* **Queue Management:** Efficiently manages 65,535 ports using a FIFO queue.
-* **Safe Interruption:** Supports `Ctrl + C` for a graceful exit without crashing.
-* **Custom Timeout:** Optimized socket timeouts to balance speed and accuracy.
+## 🚀 Key Features
 
-## 🛠️ Built With
-* **Python 3**
-* **Socket Library:** For low-level network communication.
-* **Threading & Queue:** For asynchronous task execution.
+*   **Massive Concurrency:** Leverages **100 concurrent threads** to scan thousands of ports in a matter of seconds.
+*   **Thread-Safe Queueing:** Implements a **FIFO Queue** to efficiently manage all 65,535 possible ports without data race conditions.
+*   **Graceful Termination:** Fully supports `Ctrl + C` interruptions, ensuring the script exits cleanly without hanging.
+*   **Optimized Performance:** Features balanced socket timeouts to maintain a high scanning speed while ensuring accurate detection of open ports.
+*   **Low-Level Socket Interaction:** Utilizes the native Python `socket` library for direct communication with the TCP/IP stack.
 
-## 💻 How to Use
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/abdulluzbek-rgb/Port-Scanner-Python.git](https://github.com/abdulluzbek-rgb/Port-Scanner-Python.git)
+
+
+## 🛠️ Technical Stack
+
+*   **Language:** Python 3.x.
+*   **Libraries:** 
+    *   `socket`: For low-level network connectivity.
+    *   `threading`: For executing asynchronous scanning tasks.
+    *   `queue`: For synchronized task distribution among threads.
+
+## 💻 How To Use
+
+### 1. Installation
+Clone the repository to your local environment:
+```bash
+git clone https://github.com/abdulluzbek-rgb/Port-Scanner-Python.git
+cd Port-Scanner-Python
